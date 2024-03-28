@@ -17,12 +17,12 @@ int main(int argc, char** argv) {
         setOfLetters.insert(phrase[i]);
     }
 
-    for (const auto& i : setOfLetters)
+    for (const auto& letter : setOfLetters)
     {
-        letterReps = std::count(phrase.begin(), phrase.end(), i);
-        mapOfLetters.emplace(letterReps, i);
+        letterReps = std::count(phrase.begin(), phrase.end(), letter);
+        mapOfLetters.emplace(letterReps, letter);
     }
-
+ 
     std::cout << "[OUT]:" << std::endl;
     for (const auto& pair : mapOfLetters)
     {
