@@ -16,6 +16,9 @@ public:
 		delete[] v_values;
 	}
 
+	MyVector(const MyVector&) = delete; // запрещаем конструктор копирования
+	MyVector& operator=(const MyVector&) = delete; // запрещаем оператор присваивания
+
 	void push_back(T value)
 	{
 		if (v_size == v_capacity)
