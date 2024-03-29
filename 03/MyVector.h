@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 
 template <typename T>
@@ -16,8 +16,8 @@ public:
 		delete[] v_values;
 	}
 
-	MyVector(const MyVector&) = delete; // запрещаем конструктор копирования
-	MyVector& operator=(const MyVector&) = delete; // запрещаем оператор присваивания
+	MyVector(const MyVector&) = delete; // Р·Р°РїСЂРµС‰Р°РµРј РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
+	MyVector& operator=(const MyVector&) = delete; // Р·Р°РїСЂРµС‰Р°РµРј РѕРїРµСЂР°С‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ
 
 	void push_back(T value)
 	{
